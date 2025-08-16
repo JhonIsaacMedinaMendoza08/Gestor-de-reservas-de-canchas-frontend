@@ -6,9 +6,9 @@ export default {
         card: '#111936',
         muted: '#9aa4bf',
         primary: '#5b8cff',
-        danger: '#ff5b7f',
-      },
-    },
+        danger: '#ff5b7f'
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 };
