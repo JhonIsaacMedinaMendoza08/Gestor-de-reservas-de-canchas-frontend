@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "src/app/courts/page.jsx", "src/app/reservations/page.jsx", "src/app/error.jsx", "src/components/CourtForm.jsx", "src/components/CourtsTable.jsx", "src/components/Navbar.jsx", "src/components/ReservationForm.jsx", "src/components/ReservationsTable.jsx", "src/components/Toast.jsx", "src/lib/api.js", "src/lib/services/courts.js", "src/lib/services/reservations.js", "tailwind.config.js"  ],
   "exclude": [
     "node_modules"
   ]
