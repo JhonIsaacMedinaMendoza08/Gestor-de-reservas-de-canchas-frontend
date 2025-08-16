@@ -1,6 +1,8 @@
 import '../styles/tailwind.css'
 import Navbar from '../components/Navbar'
 import Toast from '../components/Toast'
+import CourtForm from '@/components/CourtForm'
+import CourtsTable from '@/components/CourtsTable'
 
 
 export const metadata = {
@@ -15,6 +17,8 @@ export default function RootLayout({ children }) {
         <div className="max-w-5xl mx-auto p-6">
           <Navbar />
           <Toast />
+
+
           {children}
         </div>
       </body>
