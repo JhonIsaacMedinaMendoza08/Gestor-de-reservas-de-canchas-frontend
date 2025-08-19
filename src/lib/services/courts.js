@@ -1,8 +1,8 @@
 import { get, post, put, del } from '../api'
 
 export const CourtsService = {
-    list: () => get('/courts'),
-    create: (payload) => post('/courts', payload),
-    update: (id, payload) => put(`/courts/${id}`, payload),
-    remove: (id) => del(`/courts/${id}`),
+    list: () => get('/courts/get'),
+    create: (payload) => post('/courts/post', payload),
+    update: (id, payload) => put(`/courts/put/${id}`, payload),
+    remove: (id) => del(`/courts/delete/${id}`),
 }

@@ -12,8 +12,13 @@ export default function Navbar() {
     return (
         <nav className="flex items-center justify-between gap-3 py-3">
             <div className="flex items-center gap-2">
-                <span className="bg-[#1f2a52] px-2 py-1 rounded-full text-[#afc3ff] text-xs">Gestor</span>
-                <b>Reservas</b>
+                <span className="px-2 py-1 rounded-full bg-gray-800 flex items-center">
+                    <img
+                        src="balonIcon.png"
+                        alt="Mis reservas"
+                        className="w-7 h-7"
+                    />
+                </span>                <b></b>
             </div>
             <div className="flex items-center gap-2">
                 <Link className={`${base} ${is('/') && active}`} href="/">Inicio</Link>

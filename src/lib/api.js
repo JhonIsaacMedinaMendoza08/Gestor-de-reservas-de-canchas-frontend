@@ -16,7 +16,8 @@ export async function api(path, opts = {}) {
         method,
         headers: { 'Content-Type': 'application/json' },
         body: body ? JSON.stringify(body) : undefined,
-        credentials: 'include',
+        // credentials: 'include',  // ❌ quítalo
+        mode: 'cors',               // ✅ explícito (aunque es default en navegador)
         cache: 'no-store',
     });
     const text = await res.text();
