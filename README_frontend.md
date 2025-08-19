@@ -21,6 +21,7 @@ Se conecta al backend vía **API REST**.
 -   Next.js 14 (App Router)
 -   React 18
 -   Tailwind CSS
+-   Axios (para peticiones HTTP)
 
 ------------------------------------------------------------------------
 
@@ -31,6 +32,9 @@ Crea un archivo `.env.local` en la raíz del proyecto con:
 ``` env
 NEXT_PUBLIC_API_URL=http://localhost:4000/api
 ```
+
+> `NEXT_PUBLIC_API_URL` debe apuntar al backend en local o en
+> producción.
 
 ------------------------------------------------------------------------
 
@@ -62,7 +66,22 @@ El frontend quedará disponible en `http://localhost:3000`.
 
 -   Backend en `http://localhost:4000/api`
 -   Frontend en `http://localhost:3000`
--   Configura `NEXT_PUBLIC_API_URL` en `.env`
+-   Configura `NEXT_PUBLIC_API_URL` en `.env.local`
+
+Ejemplo de petición con Axios:
+
+``` js
+import axios from "axios";
+
+const api = axios.create({
+  baseURL: process.env.NEXT_PUBLIC_API_URL,
+});
+
+export const getCourts = async () => {
+  const res = await api.get("/courts/get");
+  return res.data;
+};
+```
 
 ------------------------------------------------------------------------
 
@@ -76,7 +95,8 @@ El frontend quedará disponible en `http://localhost:3000`.
 
 ## 🔗 Repositorios
 
-**Backend:** *\[[link backend](https://github.com/JhonIsaacMedinaMendoza08/Gestor-de-reservas-de-canchas.git)\]*\
+**Backend:** *\[link backend\]*\
+**Frontend:** *\[link frontend\]*
 
 ------------------------------------------------------------------------
 
