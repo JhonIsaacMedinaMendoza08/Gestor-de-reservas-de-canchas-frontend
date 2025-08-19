@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎨 Gestor de Reservas de Canchas --- Frontend
 
-## Getting Started
+Aplicación web para gestionar **canchas** y **reservas**, construida con
+**Next.js 14 + Tailwind CSS**.\
+Se conecta al backend vía **API REST**.
 
-First, run the development server:
+------------------------------------------------------------------------
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## ✨ Características
+
+-   Interfaz moderna y **responsive**.
+-   Gestión de **canchas** y **reservas** desde el navegador.
+-   **Integración directa** con el backend (API REST).
+-   Navegación rápida gracias al enrutador de Next.js.
+-   Estilos con **Tailwind** y componentes reutilizables.
+
+------------------------------------------------------------------------
+
+## 🧱 Tech Stack
+
+-   Next.js 14 (App Router)
+-   React 18
+-   Tailwind CSS
+
+------------------------------------------------------------------------
+
+## 🔐 Variables de entorno
+
+Crea un archivo `.env.local` en la raíz del proyecto con:
+
+``` env
+NEXT_PUBLIC_API_URL=http://localhost:4000/api
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+------------------------------------------------------------------------
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## ⚙️ Instalación y ejecución
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+``` bash
+npm i
+npm run dev
+```
 
-## Learn More
+El frontend quedará disponible en `http://localhost:3000`.
 
-To learn more about Next.js, take a look at the following resources:
+------------------------------------------------------------------------
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📂 Estructura de carpetas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    frontend/
+    │── app/                # Rutas y páginas (Next.js App Router)
+    │── components/         # Componentes reutilizables
+    │── styles/             # Estilos globales y Tailwind
+    │── public/             # Recursos estáticos (logos, imágenes)
+    │── package.json
+    │── tailwind.config.js
+    │── postcss.config.js
 
-## Deploy on Vercel
+------------------------------------------------------------------------
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔌 Conexión con el Backend
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+-   Backend en `http://localhost:4000/api`
+-   Frontend en `http://localhost:3000`
+-   Configura `NEXT_PUBLIC_API_URL` en `.env`
+
+------------------------------------------------------------------------
+
+## 🌐 Deploy
+
+-   Compatible con **Vercel** (Next.js nativo).
+-   Solo debes configurar la variable `NEXT_PUBLIC_API_URL` en el panel
+    de Vercel.
+
+------------------------------------------------------------------------
+
+## 🔗 Repositorios
+
+**Backend:** *\[[link backend](https://github.com/JhonIsaacMedinaMendoza08/Gestor-de-reservas-de-canchas.git)\]*\
+
+------------------------------------------------------------------------
+
+## 📝 Licencia
+
+MIT
